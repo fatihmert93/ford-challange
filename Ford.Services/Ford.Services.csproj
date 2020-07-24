@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Ford.Core\Ford.Core.csproj" />
+      <ProjectReference Include="..\Ford.Security.Bearer\Ford.Security.Bearer.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
+    </ItemGroup>
+
+</Project>
