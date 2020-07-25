@@ -16,13 +16,9 @@ namespace Ford.DataAccess
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var ConnectionString =
-                "Server=tcp:ford-test.database.windows.net,1433;Initial Catalog=ford-test;Persist Security Info=False;User ID=ford-admin;Password=frd31415.FD;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-            optionsBuilder.UseSqlServer(ConnectionString);
-            return;
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"server=superdoctor.cnc1ajzvqewo.eu-central-1.rds.amazonaws.com;database=superdoctor;user id=spadmin;password=spr31415SD;");
+                optionsBuilder.UseSqlServer(@"Server=tcp:ford-test.database.windows.net,1433;Initial Catalog=ford-test;Persist Security Info=False;User ID=ford-admin;Password=frd31415.FD;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
 
